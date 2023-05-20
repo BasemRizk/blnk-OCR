@@ -1,0 +1,8 @@
+django
+opencv-python
+scikit-image
+keras
+Image
+numpy
+path.py
+tensorflow

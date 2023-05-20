@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Welcome to blnk OCRDigit Recognizer</h1>
+    <h2>Please upload a digit image</h2>
+    <form method='POST' enctype="multipart/form-data">
+      {%csrf_token%}
+      <input type="file" name="upload" accept ".jpg, .jpeg, .png, .jfif" />
+      <input type="submit" value="submit"/>
+    </form>
+    
+    <br>
+    <br>
+    <p> Digit Image name : </p>
+    <p><p>{{file_url}}</p></p>
+    <p> The predicted label is : </p>
+    <p>{{pred}}</p>
+  </body>   
+</html>  
